@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Proqramlaşdırma – Universitet</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        h1 { color: #2196F3; }
+        input, textarea { width: 400px; padding: 5px; margin-top: 5px; }
+        button { padding: 5px 10px; margin-top: 5px; }
+        pre { background: #f0f0f0; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Proqramlaşdırma – Universitet</h1>
+
+    <h2>Python Nümunəsi</h2>
+    <p>1 + 1 nəticəsi neçədir? (Python funksiyası ilə)</p>
+    <input type="text" id="ans1">
+    <button onclick="check1()">Yoxla</button>
+    <p id="res1"></p>
+
+    <pre>
+def toplama(a,b):
+    return a+b
+    </pre>
+
+    <script>
+        function check1() {
+            let a = document.getElementById("ans1").value;
+            document.getElementById("res1").textContent = (a=="2" ? "Doğru!" : "Yanlış, təkrar cəhd et.");
+        }
+    </script>
+</body>
+</html>

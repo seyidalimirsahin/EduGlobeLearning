@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Spanish – Grade 2</title></head>
+<body>
+<h1>Spanish – Grade 2</h1>
+
+<p>Rojo means ______</p>
+<input id="a"><button onclick="c()">Check</button>
+<p id="r"></p>
+
+<script>
+function c(){
+ let v=document.getElementById("a").value.toLowerCase();
+ document.getElementById("r").innerText = (v=="red") ? "Correct!" : "Wrong!";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Fizika – 1-ci Sinif</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        h1 { color: #2196F3; }
+        input { width: 50px; }
+        button { margin-left: 10px; }
+        p { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Fizika – 1-ci Sinif</h1>
+
+    <h2>Su neçə dərəcə C-də donar?</h2>
+    <input type="number" id="ans1">
+    <button onclick="check1()">Yoxla</button>
+    <p id="res1"></p>
+
+    <script>
+        function check1() {
+            let a = document.getElementById("ans1").value;
+            document.getElementById("res1").textContent = (a==0 ? "Doğru!" : "Yanlış, təkrar cəhd et.");
+        }
+    </script>
+</body>
+</html>

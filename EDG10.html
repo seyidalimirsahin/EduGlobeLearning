@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<title>Azərbaycan Dili – 2-ci Sinif</title>
+</head>
+<body>
+<h1>Azərbaycan Dili – 2-ci Sinif</h1>
+
+<h3>Tapşırıq 1</h3>
+<p>"Mən məktəbə ____ gedirəm."</p>
+<input id="a1"><button onclick="c1()">Yoxla</button>
+<p id="r1"></p>
+
+<h3>Tapşırıq 2</h3>
+<p>"Kitab" sözünün cəmi nədir?</p>
+<input id="a2"><button onclick="c2()">Yoxla</button>
+<p id="r2"></p>
+
+<h3>Tapşırıq 3</h3>
+<p>"Gözəl" sözünün antonimi nədir?</p>
+<input id="a3"><button onclick="c3()">Yoxla</button>
+<p id="r3"></p>
+
+<script>
+function c1(){
+ let v=document.getElementById("a1").value.toLowerCase();
+ document.getElementById("r1").innerText = (v=="hər gün") ? "Doğru!" : "Yanlış!";
+}
+function c2(){
+ let v=document.getElementById("a2").value.toLowerCase();
+ document.getElementById("r2").innerText = (v=="kitablar") ? "Doğru!" : "Yanlış!";
+}
+function c3(){
+ let v=document.getElementById("a3").value.toLowerCase();
+ document.getElementById("r3").innerText = (v=="pis"||v=="çirkin") ? "Doğru!" : "Yanlış!";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Music – Grade 2</title></head>
+<body>
+<h1>Music – Grade 2</h1>
+
+<p>Do Re Mi Fa Sol La ____</p>
+<input id="a"><button onclick="c()">Check</button>
+<p id="r"></p>
+
+<script>
+function c(){
+ let v=document.getElementById("a").value.toLowerCase();
+ document.getElementById("r").innerText = (v=="si") ? "Correct!" : "Wrong!";
+}
+</script>
+</body>
+</html>

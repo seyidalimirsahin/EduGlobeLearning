@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>İngilis Dili – 1-ci Sinif</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        h1 { color: #1E90FF; }
+        input { width: 200px; }
+        button { margin-left: 5px; }
+        p { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>İngilis Dili – 1-ci Sinif</h1>
+
+    <h2>Söz tamamla</h2>
+    <p>Apple is a ______.</p>
+    <input type="text" id="ans1">
+    <button onclick="check1()">Yoxla</button>
+    <p id="res1"></p>
+
+    <script>
+        function check1() {
+            let a = document.getElementById("ans1").value.trim().toLowerCase();
+            document.getElementById("res1").textContent = (a=="fruit" ? "Doğru!" : "Yanlış, təkrar cəhd et.");
+        }
+    </script>
+</body>
+</html>

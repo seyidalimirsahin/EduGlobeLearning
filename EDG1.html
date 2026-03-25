@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<title>English – Grade 2</title>
+</head>
+<body>
+<h1>English – Grade 2</h1>
+
+<p>Cat is an ______.</p>
+<input id="a"><button onclick="c()">Check</button>
+<p id="r"></p>
+
+<script>
+function c(){
+ let v=document.getElementById("a").value.toLowerCase();
+ document.getElementById("r").innerText = (v=="animal") ? "Correct!" : "Wrong!";
+}
+</script>
+</body>
+</html>

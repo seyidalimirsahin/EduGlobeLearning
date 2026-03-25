@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Riyaziyyat – 1-ci Sinif</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        h1 { color: #4CAF50; }
+        input { width: 50px; }
+        button { margin-left: 10px; }
+        p { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Riyaziyyat – 1-ci Sinif</h1>
+
+    <h2>Toplama</h2>
+    <p>1 + 2 = ?</p>
+    <input type="number" id="ans1">
+    <button onclick="check1()">Yoxla</button>
+    <p id="res1"></p>
+
+    <h2>Çıxma</h2>
+    <p>5 - 3 = ?</p>
+    <input type="number" id="ans2">
+    <button onclick="check2()">Yoxla</button>
+    <p id="res2"></p>
+
+    <script>
+        function check1() {
+            let a = document.getElementById("ans1").value;
+            document.getElementById("res1").textContent = (a==3 ? "Doğru!" : "Yanlış, təkrar cəhd et.");
+        }
+        function check2() {
+            let a = document.getElementById("ans2").value;
+            document.getElementById("res2").textContent = (a==2 ? "Doğru!" : "Yanlış, təkrar cəhd et.");
+        }
+    </script>
+</body>
+</html>

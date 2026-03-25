@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Technology – Grade 2</title></head>
+<body>
+<h1>Technology – Grade 2</h1>
+
+<p>Mouse is used to ______ the computer.</p>
+<input id="a"><button onclick="c()">Check</button>
+<p id="r"></p>
+
+<script>
+function c(){
+ let v=document.getElementById("a").value.toLowerCase();
+ document.getElementById("r").innerText = (v=="use"||v=="control") ? "Correct!" : "Wrong!";
+}
+</script>
+</body>
+</html>

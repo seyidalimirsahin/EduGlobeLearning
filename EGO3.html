@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Riyaziyyat – 3-cü Sinif</title></head>
+<body>
+<h1>Riyaziyyat – 3-cü Sinif</h1>
+
+<p>125 + 75 = ?</p>
+<input id="a1"><button onclick="c1()">Yoxla</button><p id="r1"></p>
+
+<p>200 - 86 = ?</p>
+<input id="a2"><button onclick="c2()">Yoxla</button><p id="r2"></p>
+
+<p>6 × 7 = ?</p>
+<input id="a3"><button onclick="c3()">Yoxla</button><p id="r3"></p>
+
+<script>
+function c1(){ r("a1","r1","200"); }
+function c2(){ r("a2","r2","114"); }
+function c3(){ r("a3","r3","42"); }
+function r(a,b,c){
+ document.getElementById(b).innerText =
+ (document.getElementById(a).value==c)?"Doğru!":"Yanlış!";
+}
+</script>
+</body>
+</html>

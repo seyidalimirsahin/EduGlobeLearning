@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<title>Riyaziyyat – 2-ci Sinif</title>
+</head>
+<body>
+<h1>Riyaziyyat – 2-ci Sinif</h1>
+
+<h3>Tapşırıq 1</h3>
+<p>12 + 8 = ?</p>
+<input id="a1"><button onclick="c1()">Yoxla</button>
+<p id="r1"></p>
+
+<h3>Tapşırıq 2</h3>
+<p>20 - 7 = ?</p>
+<input id="a2"><button onclick="c2()">Yoxla</button>
+<p id="r2"></p>
+
+<h3>Tapşırıq 3</h3>
+<p>5 × 3 = ?</p>
+<input id="a3"><button onclick="c3()">Yoxla</button>
+<p id="r3"></p>
+
+<script>
+function c1(){
+ let v=document.getElementById("a1").value;
+ document.getElementById("r1").innerText = (v=="20") ? "Doğru!" : "Yanlış!";
+}
+function c2(){
+ let v=document.getElementById("a2").value;
+ document.getElementById("r2").innerText = (v=="13") ? "Doğru!" : "Yanlış!";
+}
+function c3(){
+ let v=document.getElementById("a3").value;
+ document.getElementById("r3").innerText = (v=="15") ? "Doğru!" : "Yanlış!";
+}
+</script>
+</body>
+</html>
